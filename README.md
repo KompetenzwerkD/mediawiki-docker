@@ -43,6 +43,12 @@ ODER
  ```zsh
  $ sudo docker cp ./LocalSettings.php docker_mediawiki_1:/var/www/html/.
  ```
+ ## Weitere Guides und Ressourcen
+
+ * https://wiki.chairat.me/books/docker/page/how-to-setup-mediawiki-with-docker
+ * https://www.laub-home.de/wiki/MediaWiki_Docker_Installation
+ * http://learningwikibase.com/install-wikibase/
+
 
  ## Verfasser 
 
