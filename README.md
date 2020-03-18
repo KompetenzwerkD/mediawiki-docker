@@ -46,7 +46,7 @@ ODER
 
  ## Verfasser 
 
- [KompetenzwerkD](kompetenzwerkD@saw-leipzig.de)
+ [KompetenzwerkD@saw-leipzig.de](mailto:kompetenzwerkD@saw-leipzig.de)
 
  ## Lizenz
 
