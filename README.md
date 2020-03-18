@@ -1,6 +1,6 @@
 # Mediawiki Installation mit Docker
 
-Dieses Repo stellt eine Docker Compose File und eine Anleitung zur Installation eines Mediawikis mittels Docker und Docker-Compose bereit.
+Dieses Repo stellt ein Docker Compose File und eine Anleitung zur Installation eines Mediawikis mittels Docker und Docker-Compose bereit.
 
 ## Vorraussetzung
 
