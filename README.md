@@ -16,19 +16,38 @@ $ git clone https://github.com/KompetenzwerkD/mediawiki-docker
 $ cd mediawiki-docker
 ```
 
-2. Docker compose befehl ausführen
+2. Gewünschte extensions im `config` File auskommentieren
+
+Z.B. 
+
+```
+###
+# Automatically add extension to the Mediawiki docker files
+# Use:
+#   - uncomment the name of the extension to add it to the docker  image
+###
+
+# Cargo
+ConfirmAccount
+Graph
+
+```
+
+Fügt die Extensions "ConfirmAccount" und "Graph" der Mediawiki-Installation hinzu ("Cargo" wird ignoriert).
+
+3. Docker compose befehl ausführen
 
 ```zsh
 $ sudo docker-compose up
 ```
 
-3. Mediawiki-Installation im Browser unter `localhost:8080` ausführen
+4. Mediawiki-Installation im Browser unter `localhost:8080` ausführen
 
 Achtung: Als "Database Host" muss "database" (wie das verlinkte Docker-Image der Datenbank) angegeben werden!
 
-4. Nach Ende der Installation das `LocalSettings.php` File speichern
+5. Nach Ende der Installation das `LocalSettings.php` File speichern
 
-5. `LocalSettings.php` File ins Mediawiki Docker-Image einbinden
+6. `LocalSettings.php` File ins Mediawiki Docker-Image einbinden
 
 Entweder die Zeile 21 im `docker-compose.yml` auskommentieren und Docker Image neu starten.
 
@@ -40,20 +59,21 @@ ODER
 
 `LocalSettings.php` mittels `docker cp` Befehl ins Image kopieren:
 
- ```zsh
- $ sudo docker cp ./LocalSettings.php docker_mediawiki_1:/var/www/html/.
- ```
- ## Weitere Guides und Ressourcen
+```zsh
+$ sudo docker cp ./LocalSettings.php docker_mediawiki_1:/var/www/html/.
+```
+## Weitere Guides und Ressourcen
 
- * https://wiki.chairat.me/books/docker/page/how-to-setup-mediawiki-with-docker
- * https://www.laub-home.de/wiki/MediaWiki_Docker_Installation
- * http://learningwikibase.com/install-wikibase/
+* https://wiki.chairat.me/books/docker/page/how-to-setup-mediawiki-with-docker
+* https://www.laub-home.de/wiki/MediaWiki_Docker_Installation
+* http://learningwikibase.com/install-wikibase/
 
 
- ## Verfasser 
+## Verfasser 
 
- [KompetenzwerkD@saw-leipzig.de](mailto:kompetenzwerkD@saw-leipzig.de)
+[KompetenzwerkD@saw-leipzig.de](mailto:kompetenzwerkD@saw-leipzig.de)
 
- ## Lizenz
+## Lizenz
 
- CC-0
+GPLv3 (Softvare);   
+CC-0 (Documentation)
