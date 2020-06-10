@@ -9,14 +9,14 @@ Dieses Repo stellt ein Docker Compose File und eine Anleitung zur Installation e
 
 ## Anwendung
 
-1. Repo klonen oder herunterladen und ins `mediawiki-docker` Verzeichnis wechseln
+### 1. Repo klonen oder herunterladen und ins `mediawiki-docker` Verzeichnis wechseln
 
 ```zsh
 $ git clone https://github.com/KompetenzwerkD/mediawiki-docker
 $ cd mediawiki-docker
 ```
 
-2. Gewünschte extensions im `config` File auskommentieren
+### 2. Gewünschte extensions im `config` File auskommentieren
 
 Z.B. 
 
@@ -35,19 +35,19 @@ Graph
 
 Fügt die Extensions "ConfirmAccount" und "Graph" der Mediawiki-Installation hinzu ("Cargo" wird ignoriert).
 
-3. Docker compose befehl ausführen
+### 3. Docker compose befehl ausführen
 
 ```zsh
 $ sudo docker-compose up
 ```
 
-4. Mediawiki-Installation im Browser unter `localhost:8080` ausführen
+### 4. Mediawiki-Installation im Browser unter `localhost:8080` ausführen
 
 Achtung: Als "Database Host" muss "database" (wie das verlinkte Docker-Image der Datenbank) angegeben werden!
 
-5. Nach Ende der Installation das `LocalSettings.php` File speichern
+### 5. Nach Ende der Installation das `LocalSettings.php` File speichern
 
-6. `LocalSettings.php` File ins Mediawiki Docker-Image einbinden
+### 6. `LocalSettings.php` File ins Mediawiki Docker-Image einbinden
 
 Entweder die Zeile 21 im `docker-compose.yml` auskommentieren und Docker Image neu starten.
 
