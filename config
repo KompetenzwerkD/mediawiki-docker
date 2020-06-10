@@ -1,0 +1,13 @@
+###
+# Automatically add extension to the Mediawiki docker files
+# Use:
+#   - uncomment the name of the extension to add it to the docker  image
+###
+
+Cargo
+ConfirmAccount
+Graph
+
+###
+# Good luck
+###
