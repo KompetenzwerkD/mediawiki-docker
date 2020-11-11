@@ -7,7 +7,8 @@
 version: '3'
 services:
   mediawiki:
-    image: mediawiki
+    #image: mediawiki
+    build: .
     restart: always
     ports:
       - 8080:80
