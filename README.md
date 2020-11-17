@@ -28,7 +28,9 @@ Achtung: Als "Database Host" muss "database" (wie das verlinkte Docker-Image der
 
 4. Nach Ende der Installation das `LocalSettings.php` File speichern
 
-5. `LocalSettings.php` File ins Mediawiki Docker-Image einbinden
+5. `enableSemantics();` in `LocalSettings.php` ergänzen
+
+6. `LocalSettings.php` File ins Mediawiki Docker-Image einbinden
 
 Entweder die Zeile 21 im `docker-compose.yml` auskommentieren und Docker Image neu starten.
 
@@ -41,8 +43,17 @@ ODER
 `LocalSettings.php` mittels `docker cp` Befehl ins Image kopieren:
 
  ```zsh
- $ sudo docker cp ./LocalSettings.php docker_mediawiki_1:/var/www/html/.
+ $ sudo docker cp ./LocalSettings.php mediawiki-docker_mediawiki_1:/var/www/html/.
  ```
+
+7. Update scripts ausführen
+
+```zsh
+$ sudo docker exec -it mediawiki-docker_mediawiki_1 php /var/ww/html/maintenance/update.php   
+
+$ sudo docker exec -it mediawiki-docker_mediawiki_1 php /var/www/html/maintenance/runJobs.php
+```
+
  ## Weitere Guides und Ressourcen
 
  * https://wiki.chairat.me/books/docker/page/how-to-setup-mediawiki-with-docker
