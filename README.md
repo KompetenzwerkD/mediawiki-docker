@@ -30,9 +30,9 @@ $ sudo docker-compose up
 
 #### 5. `enableSemantics();` in `LocalSettings.php` ergänzen
 
-#### 6. `LocalSettings.php` File ins Mediawiki Docker-Image einbinden
+#### 6. `LocalSettings.php` File in den Mediawiki Docker-Container einbinden
 
-Entweder die Zeile 21 im `docker-compose.yml` auskommentieren und Docker Image neu starten.
+Entweder die Zeile 21 im `docker-compose.yml` auskommentieren und Docker-Container neu starten.
 
 ```zsh
 Sudo docker-compose restart
@@ -40,7 +40,7 @@ Sudo docker-compose restart
 
 ODER
 
-`LocalSettings.php` mittels `docker cp` Befehl ins Image kopieren:
+`LocalSettings.php` mittels `docker cp` Befehl in den Container kopieren:
 
 ```zsh
 $ sudo docker cp ./LocalSettings.php mediawiki-docker_mediawiki_1:/var/www/html/.
