@@ -24,7 +24,7 @@ $ sudo docker-compose up
 
 #### 3. Mediawiki-Installation im Browser unter `localhost:8080` ausführen
 
-> Achtung: Als "Database Host" muss "database" (wie das verlinkte Docker-Image der Datenbank) angegeben werden!
+> Achtung: Als "Database Host" muss "database" (wie der Servicename im `docker-compose.yml`) angegeben werden!
 
 #### 4. Nach Ende der Installation das `LocalSettings.php` File speichern
 
