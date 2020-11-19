@@ -49,7 +49,7 @@ $ sudo docker cp ./LocalSettings.php mediawiki-docker_mediawiki_1:/var/www/html/
 #### 7. Update scripts ausführen
 
 ```zsh
-$ sudo docker exec -it mediawiki-docker_mediawiki_1 php /var/ww/html/maintenance/update.php   
+$ sudo docker exec -it mediawiki-docker_mediawiki_1 php /var/www/html/maintenance/update.php   
 
 $ sudo docker exec -it mediawiki-docker_mediawiki_1 php /var/www/html/maintenance/runJobs.php
 ```
