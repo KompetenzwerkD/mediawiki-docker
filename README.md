@@ -1,6 +1,6 @@
 # Mediawiki Installation mit Docker
 
-Dieses Repo stellt ein Docker Compose File und eine Anleitung zur Installation eines Mediawikis mittels Docker und Docker-Compose bereit.
+Dieses Repo stellt ein Docker Compose File und eine Anleitung zur Installation eines Semantic Mediawikis mittels Docker und Docker-Compose bereit.
 
 ## Vorraussetzung
 
@@ -53,12 +53,6 @@ $ sudo docker exec -it mediawiki-docker_mediawiki_1 php /var/www/html/maintenanc
 
 $ sudo docker exec -it mediawiki-docker_mediawiki_1 php /var/www/html/maintenance/runJobs.php
 ```
-
-## Weitere Guides und Ressourcen
-
-* https://wiki.chairat.me/books/docker/page/how-to-setup-mediawiki-with-docker
-* https://www.laub-home.de/wiki/MediaWiki_Docker_Installation
-* http://learningwikibase.com/install-wikibase/
 
 
 ## Verfasser 
