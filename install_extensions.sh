@@ -1,5 +1,6 @@
 cd extensions
 git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/PageSchemas.git 
+git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/DataTransfer
 git clone https://github.com/wikimedia/mediawiki-extensions-PageForms
 mv mediawiki-extensions-PageForms PageForms
 wget http://www.aifb.kit.edu/images/f/f3/SemanticMediaWikiGraph_v.1.0.1.zip
